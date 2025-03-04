@@ -5,51 +5,87 @@
 
 
 .pages-home {
-  background-color: black; /* Makes the background black */
-  color: white; /* Adjusts text color for contrast */
-  min-height: 100vh; /* Ensures it covers the full viewport */
-  margin: 0; /* Removes any default margin */
+  background-image: image-url('universe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
+
 
 .center-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Makes the div fill the viewport height */
+  height: 100vh;
   margin: 0;
+  position: relative;
+  top: -80px;
 }
 
 .shadow-button {
-  background-color: #4b5258; /* Button color (blue) */
-  color: white; /* Text color */
-  padding: 20px 120px; /* Button padding */
-  font-size: 25px; /* Font size */
-  border: none; /* Removes default border */
-  border-radius: 50px; /* Rounded corners */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow */
-  cursor: pointer; /* Changes the cursor to a pointer */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  background-color: rgba(70, 68, 68, 0.6);
+  color: white;
+  padding: 20px 120px;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .shadow-button:hover {
-  background-color: #8ba6c4; /* Darker blue on hover */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color:  rgba(28, 27, 27, 0.6);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
 }
 
 .description-box {
   position: relative;
-  top: 200px; /* Push the text box down by 200px */
+  top: 150px; /* Keep it slightly lower */
   max-width: 800px;
-  margin: 0 auto 30px auto; /* Center horizontally */
-  padding: 20px;
-  background-color: rgba(240, 240, 240, 0.6);
-  color: #333;
-  border: 1px solid rgba(220, 220, 220, 0.8);
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 20px auto; /* Center horizontally */
+  padding: 30px; /* Increase padding for a larger box */
+  background-color: rgba(255, 255, 255, 0.15); /* Almost opaque white for a crisp look */
+  color: #ffffff; /* Very dark grey text for readability */
+  border-radius: 15px; /* More rounded corners */
+  border: none; /* Remove the border for a cleaner effect */
+  box-shadow:
+    0px 10px 20px rgba(0, 0, 0, 0.5),  /* Stronger base shadow */
+    0px 14px 28px rgba(0, 0, 0, 0.3),  /* Deeper shadow layer */
+    0px 18px 36px rgba(0, 0, 0, 0.2); /* Farthest shadow for depth */
+  transform: translateZ(0px); /* Initial state */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
   text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 22px; /* Slightly larger text for clarity */
+  line-height: 1.8; /* Increased spacing for readability */
 }
 
+.description-box:hover {
+  transform: translateY(-10px) scale(1.02); /* Lift the box and slightly enlarge it */
+  box-shadow:
+    0px 16px 32px rgba(0, 0, 0, 0.6), /* Bolder shadow on hover */
+    0px 20px 40px rgba(0, 0, 0, 0.4),
+    0px 24px 48px rgba(0, 0, 0, 0.3); /* Enhanced shadow for the "pop" effect */
+}
+
+.page-header {
+  display: flex;
+  justify-content: center; /* Center the logo */
+  align-items: center; /* Center vertically */
+  padding: 20px; /* Space around the header */
+  background-color: transparent; /* Optional, keep it transparent or add a color */
+}
+
+.logo {
+  max-width: 200px; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow:
+    0px 8px 16px rgba(0, 0, 0, 0.4), /* Base shadow */
+    0px 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow for layering */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
+  border-radius: 15px;
+}
