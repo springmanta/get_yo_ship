@@ -1,9 +1,122 @@
-<h1>View all my ships</h1>
-<div class="navbar"> Navbar
+<div class="container-fluid bg-black text-white py-4">
+
+<!-- Page Title -->
+<h1 class="text-center mb-4" style="font-family: 'Orbitron', sans-serif; font-size: 3rem; text-transform: uppercase; letter-spacing: 3px; color: #0df; text-shadow: 0 0 10px #0df, 0 0 20px #0af;">BROWSE SHIPS</h1>
+
+<!-- Search Bar Section -->
+<div class="row justify-content-center mb-4">
+  <div class="col-md-9">
+    <div class="search-area">
+      <div class="bg-black rounded p-3" style="border: 1px solid #333;">
+        <div class="d-flex align-items-center">
+          <span class="me-3 text-white">Search:</span>
+          <div class="d-flex flex-grow-1">
+            <input type="text" class="form-control me-2" placeholder="capacity">
+            <input type="date" class="form-control me-2" placeholder="dates">
+            <input type="search" class="form-control me-2" placeholder="ship name">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="search-bar"> Search bar here
-    <div class="ships-container">
-        <div class="ship-card">
+
+<!-- Ships Grid Container -->
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <div class="ships-container">
+
+  <!-- Ship cards -->
+  <div class="row">
+  <!-- Ship card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ship title</h5>
+            <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
+        </div>
+      </div>
+  <!-- Ship card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ship title</h5>
+            <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
+        </div>
+      </div>
+  <!-- Ship card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ship title</h5>
+            <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
+        </div>
+      </div>
+  <!-- Ship card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+        <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ship title</h5>
+            <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
+        </div>
+      </div>
+
+  <!-- Ship card 5 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+        <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ship title</h5>
+            <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">See More</a>
+          </div>
         </div>
     </div>
+
+  <!-- Ship card 6 -->
+  <div class="col-md-4 mb-4">
+      <div class="card">
+      <img src="https://c4.wallpaperflare.com/wallpaper/802/852/58/star-wars-spaceship-wallpaper-preview.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ship title</h5>
+          <p class="card-text">Some quick example text to describe the ship and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+  </div>
+ <!-- Ship cards end -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+  <!-- Dynamic Code to display all ships -->
+  <%# <div class="row">
+  <% @ships.each do |ship| %>
+    <%# <div class="col-md-4 mb-4">
+      <div class="card bg-dark">
+        <img src="<%= ship.image_url" class="card-img-top" alt="<%= ship.name %>
+        <%# <div class="card-body">
+          <h5 class="card-title"><%= ship.name </h5>%>
+          <%# <p class="card-text"><%= ship.description </p>%>
+          <%# <a href="#" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    <%# </div>
+  <%# <%end%>
+<%# </div>
