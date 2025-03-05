@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :spaceships, only: [:index, :show, :edit, :update]
+  get 'style_guide', to: 'pages#style_guide'
+
+
 end
