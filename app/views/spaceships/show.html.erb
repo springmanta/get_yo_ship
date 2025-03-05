@@ -1,10 +1,15 @@
 
+
 <div class="spaceship-show">
-  <h1><%= @spaceship.name %></h1>
-  <%= cl_image_tag @spaceship.photo.key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %>
-  <p><strong>Name:</strong> <%= @spaceship.name %></p>
-  <p><strong>Price:</strong> <%= @spaceship.price %></p>
-  <p><strong>Capacity:</strong> <%= @spaceship.capacity %> passengers</p>
+  <h1 class="card-title"><%= @spaceship.name %></h1>
+  <%# <%= cl_image_tag @spaceship.photo.key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %> 
+  <%= cl_image_tag @spaceship.photo.key, class: "card-img-top", style: "height: 350px; width: 100%; object-fit: cover;" %>
+
+  <div class="details-row">
+    <p><strong>Price:</strong> <%= @spaceship.price %></p>
+    <p><strong>Capacity:</strong> <%= @spaceship.capacity %> passengers</p>
+  </div>
+
   <p><strong>Description:</strong> <%= @spaceship.description %></p>
-  <%= link_to 'Back to Spaceships', spaceships_path, class: 'back-button' %>
+  <%# <%= link_to 'Back to Spaceships', spaceships_path, class: 'back-button' %>
 </div>

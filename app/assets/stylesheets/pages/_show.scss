@@ -1,37 +1,59 @@
 .spaceship-show {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+  max-width: 800px; /* Increased width for a larger card */
+  margin: 30px auto; /* Centered horizontally with vertical spacing */
+  padding: 30px; /* More padding inside the card */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #2c2c2c; /* Dark gray background */
+  color: #ffffff; /* White text for readability */
+  box-shadow: 0 10px 20px rgba(45, 44, 44, 0.3); /* Enhance the shadow */
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Keep hover animations */
+  margin-left: 50px;
+}
 
-  h1 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
-  }
+// .spaceship-show:hover {
+//   transform: scale(1.02); /* Still scales on hover */
+//   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+// }
 
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-  }
+.card-title {
+  font-family: 'Orbitron', sans-serif; /* Orbitron font for a space-like feel */
+  font-size: 28px; /* Larger font for the title */
+  letter-spacing: 2px; /* Add more spacing for dramatic effect */
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffcc00; /* Golden accent color for the title */
+}
 
-  .back-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
+.card-img-top {
+  width: 100%; /* Ensure the image spans the entire width of the card */
+  height: 100%; /* Set a larger height for the image */
+  object-fit: cover; /* Ensure the image is cropped properly without distortion */
+  border-radius: 10px; /* Keep rounded corners consistent with the card */
+  margin-bottom: 20px; /* Add space below the image */
+}
 
-    &:hover {
-      background-color: #0056b3;
-    }
-  }
+
+p {
+  font-size: 18px; /* Slightly larger font for better readability */
+  line-height: 1.8; /* Improve spacing between lines */
+  margin: 15px 0;
+  font-family: 'Orbitron'
+}
+
+p strong {
+  color: #ffcc00; /* Highlight important text in gold */
+}
+
+.details-row {
+  display: flex; /* Use Flexbox to align children horizontally */
+  justify-content: space-between; /* Add space between the two <p> elements */
+  gap: 30px; /* Optional: Add spacing between the <p> tags */
+  margin-bottom: 20px; /* Add spacing below the row */
+}
+
+.details-row p {
+  flex: 1; /* Make each <p> take up equal width */
+  margin: 0; /* Reset default margins for proper alignment */
+  font-size: 16px; /* Adjust font size if necessary */
 }
