@@ -1,24 +1,10 @@
 @import "pages/home";
 
 
-// Graphical variables
+// First import variables and configuration
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
-// External libraries
-@import "bootstrap";
-@import "font-awesome";
-
-// Your CSS partials
-@import "components/index";
-@import "pages/index";
-
-// Make all pages have black background
-body {
-  background-color: #000000;
-  color: #ffffff;
-}
 
 // Typography Variables
 $font-futuristic: 'Orbitron', sans-serif;
@@ -60,3 +46,32 @@ $color-success-green: #0a3b1d;
 // Shadow effects
 $text-shadow-title: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1);
 $glow-effect: 0 0 10px rgba(255, 255, 255, 0.3);
+
+// Import external libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Import your components that use the variables
+@import "components/index";
+@import "pages/index";
+@import "pages/home";
+
+// Global styles
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+// Making placeholders white font color
+::placeholder {
+  color: rgba(200, 200, 200, 0.7) !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgba(200, 200, 200, 0.7) !important;
+}
+
+::-ms-input-placeholder {
+  color: rgba(200, 200, 200, 0.7) !important;
+}
