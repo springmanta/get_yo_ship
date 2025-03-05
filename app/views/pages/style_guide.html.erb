@@ -1,0 +1,831 @@
+<div class="container-fluid bg-black text-white py-5">
+  <!-- Header and Introduction -->
+  <header class="mb-5 text-center">
+    <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 8px; font-weight: 800; color: white; position: relative; padding: 15px 0; text-shadow: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1);">
+      SPACE FLEET
+      <span style="display: block; font-size: 2rem; letter-spacing: 4px; margin-top: 0.5rem;">DESIGN SYSTEM</span>
+      <span style="position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); width: 180px; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);"></span>
+    </h1>
+    <p class="mt-4" style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); max-width: 800px; margin: 0 auto;">
+    </p>
+  </header>
+
+  <!-- Table of Contents -->
+  <section class="mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="p-4 rounded" style="background-color: rgba(15, 20, 30, 0.9); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); border-radius: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+          <h2 style="font-family: 'Orbitron', sans-serif; font-size: 1.75rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.5rem;">TABLE OF CONTENTS</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#colors" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">01. Color System</a></li>
+                <li class="mb-2"><a href="#typography" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">02. Typography</a></li>
+                <li class="mb-2"><a href="#titles" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">03. Page Titles</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#search" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">04. Search Bar</a></li>
+                <li class="mb-2"><a href="#buttons" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">05. Buttons</a></li>
+                <li class="mb-2"><a href="#cards" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">06. Ship Cards</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#forms" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">07. Form Elements</a></li>
+                <li class="mb-2"><a href="#effects" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">08. Effects & Animations</a></li>
+                <li class="mb-2"><a href="#imports" class="text-decoration-none" style="color: #fff; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">09. Required Imports</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color System -->
+  <section id="colors" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          01. COLOR SYSTEM
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Our color system is inspired by the depth of space and sci-fi aesthetics, featuring dark backgrounds and strategic accent colors to create depth and focus.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #000000; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; margin-bottom: 0;">Background Black</h5>
+          <p style="color: rgba(200, 200, 200, 0.7); margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#000000</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #0a1d3b; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; margin-bottom: 0;">Dark Blue</h5>
+          <p style="color: rgba(200, 200, 200, 0.7); margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#0a1d3b</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #202530; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; margin-bottom: 0;">Space Gray</h5>
+          <p style="color: rgba(200, 200, 200, 0.7); margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#202530</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #ffffff; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; color: #000; margin-bottom: 0;">White</h5>
+          <p style="color: #555; margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#ffffff</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: rgba(200, 200, 200, 0.7); height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; color: #000; margin-bottom: 0;">Light Gray</h5>
+          <p style="color: #555; margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">rgba(200, 200, 200, 0.7)</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #3b0a0a; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; margin-bottom: 0;">Alert Red</h5>
+          <p style="color: rgba(200, 200, 200, 0.7); margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#3b0a0a</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 rounded" style="background-color: #0a3b1d; height: 120px; display: flex; flex-direction: column; justify-content: flex-end;">
+          <h5 style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; margin-bottom: 0;">Success Green</h5>
+          <p style="color: rgba(200, 200, 200, 0.7); margin-bottom: 0; font-family: 'Inter', sans-serif; font-size: 0.9rem;">#0a3b1d</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="bg-dark p-3 rounded">
+          <p class="text-light mb-2">How to use in SCSS:</p>
+          <pre><code>// Color variables
+$color-black: #000000;
+$color-dark-blue: #0a1d3b;
+$color-space-gray: #202530;
+$color-white: #ffffff;
+$color-light-gray: rgba(200, 200, 200, 0.7);
+$color-alert-red: #3b0a0a;
+$color-success-green: #0a3b1d;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section id="typography" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          02. TYPOGRAPHY
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Our typography system uses Orbitron for headings and UI elements to create a futuristic look, with Inter for body text to ensure readability.
+        </p>
+      </div>
+    </div>
+
+    <!-- Primary Font -->
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Orbitron (Primary/Display Font)</h3>
+        <div class="p-3 bg-dark rounded mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; font-weight: 800;">ORBITRON 800</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for main titles</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span style="font-family: 'Orbitron', sans-serif; font-size: 2rem; letter-spacing: 3px; font-weight: 700;">ORBITRON 700</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for section headers</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span style="font-family: 'Orbitron', sans-serif; font-size: 1.2rem; letter-spacing: 2px; font-weight: 500;">ORBITRON 500</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for component titles, buttons</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <span style="font-family: 'Orbitron', sans-serif; font-size: 1rem; letter-spacing: 1px; font-weight: 400;">ORBITRON 400</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for labels, smaller UI elements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Font -->
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Inter (Secondary/Body Font)</h3>
+        <div class="p-3 bg-dark rounded mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700;">Inter 700 Bold</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for emphasized body text</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span style="font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 500;">Inter 500 Medium</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for subheadings</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <span style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 400;">Inter 400 Regular</span>
+            <span style="color: rgba(200, 200, 200, 0.7); font-family: 'Inter', sans-serif;">Used for paragraphs and body text</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography Examples -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Heading Examples</h3>
+        <div class="bg-dark p-4 rounded mb-4">
+          <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; letter-spacing: 8px; text-transform: uppercase; font-weight: 800;">HEADING 1</h1>
+          <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700;">HEADING 2</h2>
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 2rem; letter-spacing: 2px; text-transform: uppercase;">HEADING 3</h3>
+          <h4 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; letter-spacing: 1px;">Heading 4</h4>
+          <h5 style="font-family: 'Orbitron', sans-serif; font-size: 1.2rem; letter-spacing: 1px;">Heading 5</h5>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Body Text Example</h3>
+        <div class="bg-dark p-4 rounded">
+          <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: rgba(200, 200, 200, 0.7); margin-bottom: 1rem;">This is a standard paragraph using the Inter font. It uses a light gray color for better readability against dark backgrounds and maintains good line height for comfortable reading.</p>
+          <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: rgba(200, 200, 200, 0.7);"><strong>This is bold text for emphasis</strong> within a paragraph. The text maintains its light gray color but uses a heavier weight for important information.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="bg-dark p-3 rounded">
+          <p class="text-light mb-2">Typography SCSS Variables:</p>
+          <pre><code>// Typography Variables
+$font-futuristic: 'Orbitron', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Font sizes
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 2rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.2rem;
+$font-size-body: 1rem;
+$font-size-small: 0.8rem;
+
+// Letter spacing
+$letter-spacing-title: 8px;
+$letter-spacing-heading: 4px;
+$letter-spacing-normal: 1px;
+$letter-spacing-wide: 2px;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+// Text transforms
+$text-transform-uppercase: uppercase;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Space-Themed Title -->
+  <section id="titles" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          03. PAGE TITLES
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Our page titles utilize dramatic text effects to establish the space theme and create visual impact.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Main Page Title</h3>
+          <div class="p-4 bg-black">
+            <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 8px; font-weight: 800; color: white; position: relative; padding: 15px 0; text-shadow: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1); text-align: center;">
+              THE ARSENAL
+              <span style="position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); width: 180px; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);"></span>
+            </h1>
+          </div>
+          <p class="mt-3 mb-0" style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Main landing pages and section headers that require dramatic impact.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Secondary Page Title</h3>
+          <div class="p-4 bg-black">
+            <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 4px; font-weight: 700; position: relative; padding-bottom: 15px; text-align: left;">
+              SPACECRAFT DETAILS
+              <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+            </h2>
+          </div>
+          <p class="mt-3 mb-0" style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Section headers and secondary page titles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-dark p-3 rounded">
+          <p class="text-light mb-2">How to use - Main Title:</p>
+          <pre><code>&lt;h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 8px; font-weight: 800; color: white; position: relative; padding: 15px 0; text-shadow: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1); text-align: center;"&gt;
+  THE ARSENAL
+  &lt;span style="position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); width: 180px; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);"&gt;&lt;/span&gt;
+&lt;/h1&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <section id="search" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          04. SEARCH BAR
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Our search interface combines functionality with the space aesthetic, featuring deep shadows and subtle highlights.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Primary Search Bar</h3>
+        <div class="p-4 bg-dark rounded">
+          <div class="rounded p-4" style="background-color: rgba(15, 20, 30, 0.9); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 70px rgba(30, 30, 60, 0.2); border-radius: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <div class="d-flex align-items-center">
+              <span class="me-3 text-white" style="font-family: 'Orbitron', sans-serif;">SEARCH</span>
+              <div class="d-flex flex-grow-1">
+                <input type="text" class="form-control me-2 bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" placeholder="capacity">
+                <input type="date" class="form-control me-2 bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;">
+                <button type="submit" class="btn" style="background-color: #202530; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); border: none; border-radius: 4px; padding: 6px 12px;">
+                  <i class="fa-solid fa-rocket"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="mt-3 mb-0" style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Main search functionality for finding ships or booking flights.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">How to use:</h3>
+          <pre><code>&lt;div class="rounded p-4" style="background-color: rgba(15, 20, 30, 0.9); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 70px rgba(30, 30, 60, 0.2); border-radius: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1);"&gt;
+  &lt;div class="d-flex align-items-center"&gt;
+    &lt;span class="me-3 text-white" style="font-family: 'Orbitron', sans-serif;"&gt;SEARCH&lt;/span&gt;
+    &lt;div class="d-flex flex-grow-1"&gt;
+      &lt;input type="text" class="form-control me-2 bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" placeholder="capacity"&gt;
+      &lt;input type="date" class="form-control me-2 bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;"&gt;
+      &lt;button type="submit" class="btn" style="background-color: #202530; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); border: none; border-radius: 4px; padding: 6px 12px;"&gt;
+        &lt;i class="fa-solid fa-rocket"&gt;&lt;/i&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Button Components Section -->
+  <section id="buttons" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          05. BUTTON COMPONENTS
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Our button system offers a range of options for different actions and importance levels, all maintaining the space-themed aesthetic.
+        </p>
+      </div>
+    </div>
+
+    <!-- Primary Action Button -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Primary Action Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <a href="#" class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;">
+              DETAILS <i class="fa-solid fa-angle-right ms-1"></i>
+            </a>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Primary actions like "View Details", "Book Now", or other main user flows.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">How to use:</h3>
+          <pre class="mt-3"><code>&lt;a href="#" class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;"&gt;
+  DETAILS &lt;i class="fa-solid fa-angle-right ms-1"&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success & Danger Buttons -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Success Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a3b1d; color: white; box-shadow: 0 0 10px rgba(100, 255, 100, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;">
+              CONFIRM <i class="fa-solid fa-check ms-1"></i>
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Confirmation actions, successful completions, approvals.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Danger Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #3b0a0a; color: white; box-shadow: 0 0 10px rgba(255, 100, 100, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;">
+              CANCEL <i class="fa-solid fa-times ms-1"></i>
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Destructive actions, cancellations, deletes, or aborts.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Outline Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: transparent; color: white; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;">
+              OPTIONS <i class="fa-solid fa-gear ms-1"></i>
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Secondary actions, options, or less prominent choices.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Size Variations -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Large Action Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 3px; text-transform: uppercase; font-size: 1rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); border-radius: 4px; padding: 12px 24px; transition: all 0.3s ease;">
+              BOOK NOW <i class="fa-solid fa-rocket ms-2"></i>
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Call-to-action buttons, main conversion points.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Icon-Only Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="background-color: #202530; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); border: none; border-radius: 4px; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+              <i class="fa-solid fa-star" style="color: #fff;"></i>
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Compact actions like favorites, close, or minimal UI elements.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; font-size: 1.3rem;">Small Utility Button</h3>
+          <div class="my-4 d-flex justify-content-center">
+            <button class="btn" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-size: 0.7rem; background-color: #202530; color: white; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); border-radius: 3px; padding: 4px 8px; transition: all 0.3s ease;">
+              FILTER
+            </button>
+          </div>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Filters, tags, small utility actions, or badge-like elements.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button Hover Effects -->
+    <div class="row mb-4">
+      <div class="col-12">
+        <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Button Hover Effects</h3>
+        <div class="bg-dark p-4 rounded">
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">Add these CSS rules to create hover effects for all buttons. The effects brighten the buttons and enhance their glow on hover.</p>
+          <pre><code>/* Add to your CSS file */
+.btn[style*="background-color: #0a1d3b"]:hover {
+  background-color: #102e57 !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn[style*="background-color: #3b0a0a"]:hover {
+  background-color: #571010 !important;
+  box-shadow: 0 0 20px rgba(255, 100, 100, 0.5) !important;
+}
+
+.btn[style*="background-color: #0a3b1d"]:hover {
+  background-color: #10572e !important;
+  box-shadow: 0 0 20px rgba(100, 255, 100, 0.5) !important;
+}
+
+.btn[style*="background-color: transparent"]:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn[style*="background-color: #202530"]:hover {
+  background-color: #2a3040 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ship Cards Section -->
+  <section id="cards" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          06. SHIP CARDS
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Ship cards showcase available spacecraft with a consistent design that highlights key information.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Standard Ship Card</h3>
+
+          <div class="card bg-dark text-white h-100">
+            <div style="height: 200px; background-color: #333; display: flex; align-items: center; justify-content: center;">
+              <span>Ship Image</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">Stellar Voyager</h5>
+              <p class="card-text flex-grow-1" style="color: rgba(200, 200, 200, 0.7);">This advanced spacecraft features quantum propulsion and luxury accommodations for long-distance travel.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge" style="background-color: #0a1d3b; color: white; font-family: 'Orbitron', sans-serif; font-size: 0.7rem;">
+                  CAPACITY: 120
+                </span>
+                <a href="#" class="btn mt-auto" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;">DETAILS <i class="fa-solid fa-angle-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-3 mb-0" style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+            <strong>Usage:</strong> Display available ships in grid layouts on search results and catalog pages.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">How to use:</h3>
+          <pre><code>&lt;div class="card bg-dark text-white h-100"&gt;
+  &lt;img src="ship_image.jpg" class="card-img-top" style="height: 200px; object-fit: cover; width: 100%;"&gt;
+  &lt;div class="card-body d-flex flex-column"&gt;
+    &lt;h5 class="card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;"&gt;Ship Name&lt;/h5&gt;
+    &lt;p class="card-text flex-grow-1" style="color: rgba(200, 200, 200, 0.7);"&gt;Ship description text goes here.&lt;/p&gt;
+    &lt;div class="d-flex justify-content-between align-items-center"&gt;
+      &lt;span class="badge" style="background-color: #0a1d3b; color: white; font-family: 'Orbitron', sans-serif; font-size: 0.7rem;"&gt;
+        CAPACITY: 120
+      &lt;/span&gt;
+      &lt;a href="#" class="btn mt-auto" style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;"&gt;DETAILS &lt;i class="fa-solid fa-angle-right ms-1"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="bg-dark p-4 rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Using with Rails</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            For dynamic content in Rails, use this pattern to iterate through ship data:
+          </p>
+          <pre><code>&lt;div class="row"&gt;
+  &lt;% @spaceships.each do |spaceship| %&gt;
+    &lt;div class="col-md-4 mb-4"&gt;
+      &lt;div class="card bg-dark text-white h-100"&gt;
+        &lt;%= cl_image_tag spaceship.photo.key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %&gt;
+        &lt;div class="card-body d-flex flex-column"&gt;
+          &lt;h5 class="card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;"&gt;&lt;%= spaceship.name %&gt;&lt;/h5&gt;
+          &lt;p class="card-text flex-grow-1" style="color: rgba(200, 200, 200, 0.7);"&gt;&lt;%= spaceship.description %&gt;&lt;/p&gt;
+          &lt;div class="d-flex justify-content-between align-items-center"&gt;
+            &lt;span class="badge" style="background-color: #0a1d3b; color: white; font-family: 'Orbitron', sans-serif; font-size: 0.7rem;"&gt;
+              CAPACITY: &lt;%= spaceship.capacity %&gt;
+            &lt;/span&gt;
+            &lt;%= link_to "DETAILS", spaceship_path(spaceship), class: "btn", style: "font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; background-color: #0a1d3b; color: white; box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); border-radius: 4px; padding: 8px 15px; transition: all 0.3s ease;" %&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;% end %&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Elements -->
+  <section id="forms" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          07. FORM ELEMENTS
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Form inputs maintain the sleek, futuristic aesthetic with dark backgrounds and subtle shadows.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Input Fields</h3>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem;">TEXT INPUT</label>
+            <input type="text" class="form-control bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" id="exampleFormControlInput1" placeholder="Enter ship name">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlSelect1" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem;">SELECT DROPDOWN</label>
+            <select class="form-select bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" id="exampleFormControlSelect1">
+              <option>Choose spacecraft class</option>
+              <option>Corvette</option>
+              <option>Frigate</option>
+              <option>Cruiser</option>
+              <option>Dreadnought</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem;">TEXT AREA</label>
+            <textarea class="form-control bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" id="exampleFormControlTextarea1" rows="3" placeholder="Special requirements"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">How to use:</h3>
+          <pre><code>&lt;div class="mb-3"&gt;
+  &lt;label for="input1" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem;"&gt;TEXT INPUT&lt;/label&gt;
+  &lt;input type="text" class="form-control bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" id="input1" placeholder="Enter ship name"&gt;
+&lt;/div&gt;
+
+&lt;div class="mb-3"&gt;
+  &lt;label for="select1" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem;"&gt;SELECT DROPDOWN&lt;/label&gt;
+  &lt;select class="form-select bg-dark text-white" style="border: none; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); border-radius: 4px;" id="select1"&gt;
+    &lt;option&gt;Choose spacecraft class&lt;/option&gt;
+    &lt;option&gt;Corvette&lt;/option&gt;
+    &lt;option&gt;Frigate&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Effects & Animations -->
+  <section id="effects" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          08. EFFECTS & ANIMATIONS
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          Subtle effects and animations enhance the space-themed interface without overwhelming users.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Shadow Effects</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            Depth is created through strategic layering of shadows:
+          </p>
+          <ul style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            <li class="mb-2"><strong>Elevated components:</strong> <code>box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 70px rgba(30, 30, 60, 0.2);</code></li>
+            <li class="mb-2"><strong>Button glow:</strong> <code>box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);</code></li>
+            <li class="mb-2"><strong>Inset elements:</strong> <code>box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);</code></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded h-100">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Hover Transitions</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            For a responsive feel, add these transitions to interactive elements:
+          </p>
+          <ul style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            <li class="mb-2"><strong>Buttons:</strong> <code>transition: all 0.3s ease;</code></li>
+            <li class="mb-2"><strong>Cards:</strong> <code>transition: transform 0.3s ease, box-shadow 0.3s ease;</code></li>
+            <li class="mb-2"><strong>Card hover effect:</strong> <code>transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Required Imports Section -->
+  <section id="imports" class="mb-5 pt-4">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; position: relative; padding-bottom: 15px; margin-bottom: 1.5rem;">
+          09. REQUIRED IMPORTS
+          <span style="position: absolute; left: 0; bottom: 0; width: 100px; height: 2px; background: linear-gradient(90deg, rgba(255,255,255,0.7), transparent);"></span>
+        </h2>
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+          To implement this design system, you'll need to include these resources in your project.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Fonts</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            Add this to your layout head or application.html.erb:
+          </p>
+          <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"&gt;</code></pre>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Icons</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            Add this to your layout head or application.html.erb:
+          </p>
+          <pre><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Bootstrap (if not already included)</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            Make sure Bootstrap is included in your project:
+          </p>
+          <pre><code>// In your Gemfile
+gem 'bootstrap', '~> 5.2.3'
+
+// In application.js
+import "bootstrap"
+
+// In application.scss
+@import "bootstrap";</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="p-4 bg-dark rounded">
+          <h3 style="font-family: 'Orbitron', sans-serif; letter-spacing: 2px; margin-bottom: 1rem;">Global CSS Variables</h3>
+          <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7);">
+            For consistency, add these variables to your application.scss:
+          </p>
+          <pre><code>// Typography Variables
+$font-futuristic: 'Orbitron', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Font sizes
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 2rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.2rem;
+$font-size-body: 1rem;
+$font-size-small: 0.8rem;
+
+// Letter spacing
+$letter-spacing-title: 8px;
+$letter-spacing-heading: 4px;
+$letter-spacing-normal: 1px;
+$letter-spacing-wide: 2px;
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+// Text transforms
+$text-transform-uppercase: uppercase;
+
+// Color variables
+$color-black: #000000;
+$color-dark-blue: #0a1d3b;
+$color-space-gray: #202530;
+$color-white: #ffffff;
+$color-light-gray: rgba(200, 200, 200, 0.7);
+$color-alert-red: #3b0a0a;
+$color-success-green: #0a3b1d;
+
+// Shadow effects
+$text-shadow-title: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1);
+$glow-effect: 0 0 10px rgba(255, 255, 255, 0.3);</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Credits -->
+  <footer class="mt-5 pt-5 pb-4 text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p style="font-family: 'Inter', sans-serif; color: rgba(200, 200, 200, 0.7); font-size: 0.9rem;">
+          Space Fleet Design System • Version 1.0 • March 2025<br>
+          <span style="display: block; margin-top: 0.5rem;">Created for Get Yo Ship • For developer use only</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
