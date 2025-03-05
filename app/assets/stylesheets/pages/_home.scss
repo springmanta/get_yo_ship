@@ -5,7 +5,7 @@
 
 
 .pages-home {
-  background-image: image-url('universe.jpg');
+  background-image: image-url('universe-inception.gif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -23,23 +23,28 @@
   margin: 0;
   position: relative;
   top: -80px;
+  font-family: 'Orbitron'
 }
 
 .shadow-button {
-  background-color: rgba(70, 68, 68, 0.6);
+  background-color: rgba(111, 107, 107, 0.3);
   color: white;
   padding: 20px 120px;
   font-size: 25px;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(49, 47, 47, 0.2);
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: border 0.5s ease;
+}
+
+.shadow-button.border-appear {
+  border-color: #5a5c5e; /* Border color after the typing effect */
 }
 
 .shadow-button:hover {
-  background-color:  rgba(28, 27, 27, 0.6);
+  background-color:  rgba(28, 27, 27, 0.8);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
   transform: translateY(-2px);
 }
@@ -50,7 +55,7 @@
   max-width: 800px;
   margin: 0 auto 20px auto; /* Center horizontally */
   padding: 30px; /* Increase padding for a larger box */
-  background-color: rgba(255, 255, 255, 0.15); /* Almost opaque white for a crisp look */
+  background-color: rgba(12, 6, 6, 0.15); /* Almost opaque white for a crisp look */
   color: #ffffff; /* Very dark grey text for readability */
   border-radius: 15px; /* More rounded corners */
   border: none; /* Remove the border for a cleaner effect */
@@ -61,8 +66,11 @@
   transform: translateZ(0px); /* Initial state */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
   text-align: center;
-  font-size: 22px; /* Slightly larger text for clarity */
+  font-size: 24px; /* Slightly larger text for clarity */
   line-height: 1.8; /* Increased spacing for readability */
+  height: 260px; /* Fixed height to prevent resizing */
+  overflow: hidden;
+  font-family: 'Orbitron'
 }
 
 .description-box:hover {
@@ -82,11 +90,8 @@
 }
 
 .logo {
-  max-width: 200px; /* Adjust size of the logo */
+  max-width: 400px; /* Adjust size of the logo */
   height: auto; /* Maintain aspect ratio */
-  box-shadow:
-    0px 8px 16px rgba(0, 0, 0, 0.4), /* Base shadow */
-    0px 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow for layering */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover */
-  border-radius: 15px;
+  border-radius: 5px;
 }
