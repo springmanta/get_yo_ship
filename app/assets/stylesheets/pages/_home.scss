@@ -23,6 +23,7 @@
   margin: 0;
   position: relative;
   top: -80px;
+  font-family: 'Orbitron'
 }
 
 .shadow-button {
@@ -32,7 +33,7 @@
   font-size: 25px;
   border: 2px solid transparent;
   border-radius: 10px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 16px rgba(49, 47, 47, 0.2);
   cursor: pointer;
   text-decoration: none;
   transition: border 0.5s ease;
@@ -64,7 +65,7 @@
     0px 18px 36px rgba(0, 0, 0, 0.2); /* Farthest shadow for depth */
   transform: translateZ(0px); /* Initial state */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
-  text-align: left;
+  text-align: center;
   font-size: 24px; /* Slightly larger text for clarity */
   line-height: 1.8; /* Increased spacing for readability */
   height: 260px; /* Fixed height to prevent resizing */
