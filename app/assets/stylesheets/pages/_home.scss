@@ -64,11 +64,12 @@
     0px 18px 36px rgba(0, 0, 0, 0.2); /* Farthest shadow for depth */
   transform: translateZ(0px); /* Initial state */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation effects */
-  text-align: center;
+  text-align: left;
   font-size: 24px; /* Slightly larger text for clarity */
   line-height: 1.8; /* Increased spacing for readability */
-  height: 220px; /* Fixed height to prevent resizing */
+  height: 260px; /* Fixed height to prevent resizing */
   overflow: hidden;
+  font-family: 'Orbitron'
 }
 
 .description-box:hover {
