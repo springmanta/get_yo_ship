@@ -72,9 +72,9 @@
   transition: all 0.3s ease;
   text-decoration: none; // Removes underline from links
   display: inline-block;
-  margin-top: auto; // This pushes the button to the bottom of the card
+  margin-top: auto;
   align-self: flex-start;
-
+  
   &:hover {
     background-color: lighten($color-dark-blue, 10%);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -106,7 +106,36 @@
   }
 }
 
-.card-title-show {
+
+.spaceship-card-image {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.spaceship-card-title {
+  font-family: $font-futuristic;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+.spaceship-card-description {
+  margin-bottom: 1rem;
+  min-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .card-title-show {
   font-family: 'Orbitron', sans-serif; /* Orbitron font for a space-like feel */
   font-size: 28px; /* Larger font for the title */
   letter-spacing: 2px; /* Add more spacing for dramatic effect */
