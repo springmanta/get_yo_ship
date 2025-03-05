@@ -74,7 +74,7 @@
   display: inline-block;
   margin-top: auto;
   align-self: flex-start;
-  
+
   &:hover {
     background-color: lighten($color-dark-blue, 10%);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -106,6 +106,15 @@
   }
 }
 
+.card-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 25px;
+  color: #ffcc00;
+}
+
 
 .spaceship-card-image {
   height: 200px;
@@ -134,8 +143,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+}
 
-  .card-title-show {
+.card-title-show {
   font-family: 'Orbitron', sans-serif; /* Orbitron font for a space-like feel */
   font-size: 28px; /* Larger font for the title */
   letter-spacing: 2px; /* Add more spacing for dramatic effect */
