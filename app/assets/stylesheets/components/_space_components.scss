@@ -93,7 +93,7 @@
 
 
 .navbar-space-link {
-  font-family: $font-futuristic; 
+  font-family: $font-futuristic;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -104,4 +104,13 @@
   &:hover {
     color: lighten($color-white, 20%);
   }
+}
+
+.card-title-show {
+  font-family: 'Orbitron', sans-serif; /* Orbitron font for a space-like feel */
+  font-size: 28px; /* Larger font for the title */
+  letter-spacing: 2px; /* Add more spacing for dramatic effect */
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffcc00; /* Golden accent color for the title */
 }
