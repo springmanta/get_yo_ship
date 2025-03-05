@@ -13,9 +13,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "pages/show"
 
 // Make all pages have black background
-body {
-  background-color: #000000;
-  color: #ffffff; 
-}
+// body {
+//   background-color: #000000;
+//   color: #ffffff;
+// }
