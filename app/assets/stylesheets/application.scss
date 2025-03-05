@@ -54,16 +54,14 @@ $glow-effect: 0 0 10px rgba(255, 255, 255, 0.3);
 // Import your components that use the variables
 @import "components/index";
 @import "pages/index";
-
-@import "pages/show"
+@import "pages/home";
+@import "pages/show";
 
 // Make all pages have black background
 // body {
 //   background-color: #000000;
 //   color: #ffffff;
 // }
-
-@import "pages/home";
 
 // Global styles
 body {
@@ -84,4 +82,3 @@ body {
 ::-ms-input-placeholder {
   color: rgba(200, 200, 200, 0.7) !important;
 }
-
