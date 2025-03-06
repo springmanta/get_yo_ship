@@ -70,10 +70,12 @@
   border-radius: 4px;
   padding: 8px 15px;
   transition: all 0.3s ease;
-  text-decoration: none; // Removes underline from links
-  display: inline-block;
+  text-decoration: none;
+  display: block;
+  width: 100%;
   margin-top: auto;
-  align-self: flex-start;
+  align-self: center;
+  text-align: center;
 
   &:hover {
     background-color: lighten($color-dark-blue, 10%);
@@ -106,13 +108,13 @@
   }
 }
 
-.card-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 28px;
-  letter-spacing: 2px;
-  text-align: left;
-  margin-bottom: 25px;
-  color: #ffcc00;
+.card-title-index {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #f8f8f7;
 }
 
 
@@ -141,7 +143,7 @@
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 1rem;
-  min-height: 4.8rem; 
+  min-height: 4.8rem;
   max-height: 4.8rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -157,11 +159,6 @@
   padding: 1rem;
 }
 
-.card-title-show {
-  font-family: 'Orbitron', sans-serif; /* Orbitron font for a space-like feel */
-  font-size: 28px; /* Larger font for the title */
-  letter-spacing: 2px; /* Add more spacing for dramatic effect */
-  text-align: center;
-  margin-bottom: 25px;
-  color: #ffcc00; /* Golden accent color for the title */
+.card-img-top {
+  display: flex;
 }

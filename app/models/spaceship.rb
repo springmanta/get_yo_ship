@@ -1,5 +1,5 @@
 class Spaceship < ApplicationRecord
-  has_one_attached :photo
+  has_many_attached :photos
   has_many :availabilities, dependent: :destroy
   include PgSearch::Model
   attr_accessor :is_available

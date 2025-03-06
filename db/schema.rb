@@ -60,6 +60,9 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_06_121113) do
     t.boolean "availability"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "made_by"
+    t.string "ship_class"
+    t.float "max_speed"
   end
 
   create_table "users", force: :cascade do |t|
