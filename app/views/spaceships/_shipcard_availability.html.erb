@@ -1,0 +1,28 @@
+<div class="col-md-4 mb-4">
+  <div class="card bg-dark text-white h-100">
+    <div class="card-img-wrapper <%= 'unavailable' unless spaceship.is_available %>">
+      <%= cl_image_tag spaceship.photo.key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %>
+    </div>
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title spaceship-card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">
+        <%= spaceship.name %>
+      </h5>
+      <p class="card-text spaceship-card-description flex-grow-1"><%= spaceship.description %></p>
+      <% if spaceship.is_available %>
+        <%= link_to "DETAILS", spaceship_path(spaceship), class: "details-button" %>
+      <% else %>
+        <span class="btn btn-secondary disabled">Unavailable</span>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<% if @spaceships.any? %>
+  <div class="row">
+    <% @spaceships.each do |spaceship| %>
+      <%= render partial: 'spaceships/shipcard_availability', locals: { spaceship: spaceship } %>
+    <% end %>
+  </div>
+<% else %>
+  <div class="alert alert-warning text-center">No spaceships available for the selected date range.</div>
+<% end %>
