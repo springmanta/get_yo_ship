@@ -10,17 +10,19 @@
   <div class="col-md-9">
     <div class="search-area">
       <div class="rounded space-search-container">
-        <div class="d-flex align-items-center">
-          <span class="me-3 space-label">SEARCH</span>
-          <div class="d-flex flex-grow-1">
-            <input type="text" class="form-control me-2 bg-dark space-input" placeholder="capacity">
-            <input type="text" class="form-control me-2 bg-dark space-input" placeholder="dates">
-            <input type="search" class="form-control me-2 bg-dark space-input" placeholder="ship name">
-            <button type="submit" class="btn space-button">
-              <i class="fa-solid fa-space-shuttle" style="transform: rotate(90deg);"></i>
-            </button>
+        <form action="<%= spaceships_path %>" method="get">
+          <div class="d-flex align-items-center">
+            <span class="me-3 space-label">SEARCH</span>
+            <div class="d-flex flex-grow-1">
+              <input type="text" name="query" class="form-control me-2 bg-dark space-input title-search" placeholder="Search..." value="<%= params[:query] %>">
+              <input type="date" name="start_date" class="form-control me-2 bg-dark space-input date-search" placeholder="Start Date" value="<%= params[:start_date] %>">
+              <input type="date" name="end_date" class="form-control me-2 bg-dark space-input date-search" placeholder="End Date" value="<%= params[:end_date] %>">
+              <button type="submit" class="btn space-button">
+                <i class="fa-solid fa-space-shuttle" style="transform: rotate(90deg);"></i>
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

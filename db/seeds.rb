@@ -230,3 +230,8 @@ end
 slave_one.save
 puts "Created #{slave_one.name}!\n"
 puts "Finished the Get Yo Ship Seed!"
+
+Spaceship.all.each do |spaceship|
+  spaceship.availabilities.create(start_date: '2025-03-01', end_date: '2025-03-31')
+  spaceship.availabilities.create(start_date: '2025-05-01', end_date: '2025-05-31')
+end

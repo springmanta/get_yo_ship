@@ -1,0 +1,22 @@
+.card-img-wrapper.unavailable .card-img-top {
+  filter: blur(5px); /* Blur the image */
+  opacity: 0.6; /* Dim the image slightly */
+  transition: all 0.3s ease-in-out; /* Smooth effect */
+}
+
+.card-img-wrapper.unavailable .card-img-top:hover {
+  filter: none; /* Optional: Unblur on hover */
+  opacity: 1; /* Restore full visibility */
+}
+
+/* Increase the width of the title search box */
+.title-search {
+  flex-grow: 2; /* Makes the title search box expand more */
+  min-width: 300px; /* Ensures a minimum size */
+}
+
+/* Decrease the size of the date search boxes */
+.date-search {
+  flex-grow: 0; /* Prevents excessive expansion */
+  width: 150px; /* Custom width for smaller size */
+}
