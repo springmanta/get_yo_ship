@@ -25,9 +25,9 @@
               <!-- Carousel Inner -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <%= cl_image_tag @spaceship.photo.key,
-                  class: "spaceship-carousel-image",
-                  alt: "#{@spaceship.name}"%>
+                <% @spaceship.photos.each do |photo| %>
+                  <%= cl_image_tag photo.key, class: "spaceship-carousel-image"%>
+                <% end %>
                 </div>
               </div>
 
@@ -63,13 +63,13 @@
                 <strong>Capacity:</strong> <%= @spaceship.capacity %> passengers
               </div>
               <div class="detail-item">
-                <strong>Made By:</strong> <%= @spaceship.capacity %>
+                <strong>Made By:</strong> <%= @spaceship.made_by %>
               </div>
               <div class="detail-item">
-                <strong>Class:</strong> <%= @spaceship.capacity %>
+                <strong>Class:</strong> <%= @spaceship.ship_class %>
               </div>
               <div class="detail-item">
-                <strong>Maximum Speed:</strong> <%= @spaceship.capacity %>
+                <strong>Max Speed:</strong> <%= @spaceship.max_speed %>
               </div>
             </div>
             </div>
