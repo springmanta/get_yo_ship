@@ -13,12 +13,15 @@
 .spaceship-content-wrapper {
   display: flex;
   gap: 2rem;
-  width: 100%
+  width: 100%;
+  background-color: #000000;
+  align-items: stretch;
   }
 
 
 .left-column-details {
   flex: 2;
+  padding: 2rem;
 }
 
 .right-column-booking {
@@ -144,7 +147,7 @@
 
 ////////////////////// BOOKING ////////////////////////////////////////
 .spaceship-booking {
-  background-color: #111111;
+  background-color: #000000;
   border-radius: 8px;
   padding: 2rem;
 
