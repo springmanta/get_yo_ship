@@ -9,8 +9,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :spaceships, only: [:index, :show, :edit, :update]
+  resources :spaceships, only: [:index, :show, :edit, :update] do
+    resources :bookings, only: [:new, :create, :show]
+  end
   get 'style_guide', to: 'pages#style_guide'
-
-
 end
