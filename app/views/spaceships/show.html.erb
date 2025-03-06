@@ -24,29 +24,30 @@
 
               <!-- Carousel Inner -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                <% @spaceship.photos.each do |photo| %>
+                <% @spaceship.photos.each_with_index do |photo, index| %>
+                  <div class="carousel-item <%= 'active' if index.zero? %>">
                   <%= cl_image_tag photo.key, class: "spaceship-carousel-image"%>
+                  </div>
                 <% end %>
                 </div>
               </div>
 
               <!-- Carousel Controls -->
               <button
-                class="carousel-control-prev"
+                class="carousel-control-prev spaceship-carousel-control"
                 type="button"
                 data-bs-target="#spaceship-image-carousel"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <i class="fa-solid fa-rocket spaceship-carousel-icon"></i>
                 <span class="visually-hidden">Previous</span>
               </button>
 
               <button
-                class="carousel-control-next"
+                class="carousel-control-next spaceship-carousel-control"
                 type="button"
                 data-bs-target="#spaceship-image-carousel"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <i class="fa-solid fa-rocket spaceship-carousel-icon spaceship-carousel-icon-next"></i>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
