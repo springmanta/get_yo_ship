@@ -1,6 +1,6 @@
 <div class="col-md-4 mb-4">
   <div class="card bg-dark text-white h-100">
-    <%= cl_image_tag spaceship.photo.key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %>
+    <%= cl_image_tag spaceship.photos[1].key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %>
     <div class="card-body d-flex flex-column">
       <h5 class="card-title spaceship-card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;"><%= spaceship.name %></h5>
       <p class="card-text spaceship-card-description flex-grow-1"><%= spaceship.description %></p>
