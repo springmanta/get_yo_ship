@@ -5,6 +5,7 @@
 
 
 .pages-home {
+  padding-top: 100px;
   background-image: image-url('universe-inception.gif');
   background-size: cover;
   background-position: center;
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   margin: 0;
   position: relative;
   top: -80px;
@@ -46,12 +47,15 @@
 .shadow-button:hover {
   background-color:  rgba(28, 27, 27, 0.8);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
-  transform: translateY(-2px);
+  // transform: translateY(-2px);
+  transform: scale(2);
+  transition: transform 0.4s ease;
+  color: #f4c50a;
 }
 
 .description-box {
   position: relative;
-  top: 150px;
+  top: 100px;
   max-width: 800px;
   margin: 0 auto 20px auto;
   padding: 30px;
