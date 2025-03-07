@@ -1,1 +1,12 @@
-<h1> Confirmation Page </h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9 main-spaceship-container">
+      <div class="spaceship-name">
+        <h1>Success!</h1>
+      </div>
+      <h3 class="spaceship-card-title"> <%= @booking.spaceship.name %> confirmed for <%= pluralize(@booking.guests, "passenger") %>!</h1>
+      <br>
+        <%= render 'shipcard', spaceship: @spaceship, booking: @booking %>
+    </div>
+  </div>
+</div>
