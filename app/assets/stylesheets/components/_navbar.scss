@@ -26,11 +26,15 @@
 }
 
 .space-input {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .space-button {
-  background-color: #007bff; 
+  background-color: rgba(36, 35, 35, 0.5);
   color: white;
   border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4), 0 0 05px rgba(0, 123, 255, 0.7), inset 0 2px 5px rgba(200, 200, 200, 0.3);
 }
