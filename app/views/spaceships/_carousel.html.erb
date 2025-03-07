@@ -1,0 +1,31 @@
+<!-- Image Carousel -->
+<div id="spaceship-image-carousel" class="carousel slide">
+  <!-- Carousel Indicators -->
+
+
+  <!-- Carousel Inner -->
+  <div class="carousel-inner">
+    <% @spaceship.photos.each_with_index do |photo, index| %>
+      <div class="carousel-item <%= 'active' if index == 0 %>">
+        <%= cl_image_tag photo.key, class: "spaceship-carousel-image", height: 400 %>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button
+  class="carousel-control-prev spaceship-nav-button"
+  type="button"
+  data-bs-target="#spaceship-image-carousel"
+  data-bs-slide="prev">
+  <i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<button
+  class="carousel-control-next spaceship-nav-button"
+  type="button"
+  data-bs-target="#spaceship-image-carousel"
+  data-bs-slide="next">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
