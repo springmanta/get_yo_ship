@@ -4,8 +4,10 @@
   <img src="/assets/logo.png" alt="Logo" style="height: 30px; width: auto;">
 </a>
 
-  <!-- View Ships Link -->
-<a href="/spaceships" class="nav-link" style=" font-family:'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 2px; color: white; font-weight: bold; text-decoration: none; margin-right: 1rem;">VIEW SHIPS</a>
+  <!-- View Ships Link (only on show page) -->
+  <% if controller_name == "spaceships" && action_name == "show" %>
+    <a href="<%= spaceships_path %>" class="nav-link" style=" font-family:'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 2px; color: white; font-weight: bold; text-decoration: none; margin-right: 1rem;">VIEW SHIPS</a>
+  <% end %>
 
     <!-- Centered Search Bar -->
 <form action="/spaceships" method="get" class="d-flex align-items-center search-area" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); z-index: 1000; width: 600px;">
@@ -15,8 +17,6 @@
     <i class="fa-solid fa-space-shuttle" style="transform: rotate(90deg);"></i>
   </button>
 </form>
-
-
 
     <!-- Navigation Links and Avatar -->
     <div class="d-flex align-items-center ms-auto">
