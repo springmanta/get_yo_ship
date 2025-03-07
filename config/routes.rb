@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :spaceships, only: [:index, :show] do
     resources :bookings, only: [:new, :create]
   end
-  resources :bookings, only: [:show]
+
+  resources :bookings, only: [:index,:show]
   get 'style_guide', to: 'pages#style_guide'
 end
