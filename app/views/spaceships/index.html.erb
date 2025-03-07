@@ -1,29 +1,16 @@
 <div class="container-fluid text-white pb-4" style="margin-top: -24px;">
 
 <!-- Page Title -->
-<h1 class="text-center mb-5" style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 8px; font-weight: 800; color: white; position: relative; padding: 15px 0; text-shadow: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1);">
+<h1 class="text-center mb-5" style="margin-top: 100px; font-family: 'Orbitron', sans-serif; font-size: 3.5rem; text-transform: uppercase; letter-spacing: 8px; font-weight: 800; color: white; position: relative; padding: 15px 0; text-shadow: 3px 3px 0 #333, 6px 6px 0 #111, 0 0 20px rgba(255,255,255,0.1);">
   BROWSE OUR FLEET
   <span style="position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); width: 180px; height: 2px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);"></span>
 </h1>
+
 <!-- Search Bar Section -->
 <div class="row justify-content-center mb-4">
   <div class="col-md-9">
     <div class="search-area">
-      <div class="rounded space-search-container">
-        <form action="<%= spaceships_path %>" method="get">
-          <div class="d-flex align-items-center">
-            <span class="me-3 space-label">SEARCH</span>
-            <div class="d-flex flex-grow-1">
-              <input type="text" name="query" class="form-control me-2 bg-dark space-input title-search" placeholder="Search..." value="<%= params[:query] %>">
-              <input type="date" name="start_date" class="form-control me-2 bg-dark space-input date-search" placeholder="Start Date" value="<%= params[:start_date] %>">
-              <input type="date" name="end_date" class="form-control me-2 bg-dark space-input date-search" placeholder="End Date" value="<%= params[:end_date] %>">
-              <button type="submit" class="btn space-button">
-                <i class="fa-solid fa-space-shuttle" style="transform: rotate(90deg);"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+
     </div>
   </div>
 </div>

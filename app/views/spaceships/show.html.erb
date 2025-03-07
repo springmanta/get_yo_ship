@@ -1,28 +1,31 @@
 <div class="container">
   <div class="row justify-content-center">
-      <div class="col-12 col-md-9 main-spaceship-container">
+    <div class="col-12 col-md-9 main-spaceship-container">
 
-          <!-- Spaceship Name -->
-          <div class="spaceship-name">
-          <h1><%= @spaceship.name %></h1>
+        <!-- Spaceship Name -->
+        <div class="spaceship-name">
+        <h1><%= @spaceship.name %></h1>
+        </div>
+
+        <!-- Render Carousel Partial -->
+        <%= render 'carousel', spaceship: @spaceship %>
+
+        <!-- About Ship Title -->
+        <div class="about-ship-title"> About <%= @spaceship.name %> </div>
+
+        <!-- Spaceship Content Wrapper -->
+        <div class="spaceship-content-wrapper">
+
+          <!-- Render Details Partial -->
+          <div class="left-column-details">
+          <%= render 'details', spaceship: @spaceship %>
           </div>
 
-          <!-- Render Carousel Partial -->
-          <%= render 'carousel', spaceship: @spaceship %>
-
-          <!-- Spaceship Content Wrapper -->
-          <div class="spaceship-content-wrapper">
-            <div class="left-column-details">
-
-            <!-- Render Details Partial -->
-            <%= render 'details', spaceship: @spaceship %>
-            </div>
-
-            <!-- Render Booking Form Partial -->
-            <div class="right-column-booking">
-            <%= render 'booking_form', spaceship: @spaceship %>
-            </div>
+          <!-- Render Booking Form Partial -->
+          <div class="right-column-booking">
+          <%= render 'booking_form', spaceship: @spaceship %>
           </div>
-      </div>
+        </div>
+    </div>
   </div>
 </div>

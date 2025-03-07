@@ -123,6 +123,15 @@
 
 
 ////////////////////// DETAILS ////////////////////////////////////////
+.about-ship-title {
+  display: flex;
+  background-color: #000000;
+  color: #ffe81f;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-futuristic;
+  font-size: $font-size-h3;
+}
 .spaceship-details {
   margin-bottom: 2rem;
 
@@ -153,12 +162,13 @@
   .booking-header {
     text-align: center;
     margin-bottom: 1.5rem;
+    font-family: $font-body;
 
-    h3 {
-      font-family: $font-futuristic;
-      color: #ffffff;
-      letter-spacing: 1px;
-    }
+    // h3 {
+    //   font-family: $font-futuristic;
+    //   color: #ffe81f;
+    //   letter-spacing: 1px;
+    // }
   }
 
   .booking-form {
