@@ -1,0 +1,12 @@
+<div class="">
+  <div class="card bg-dark text-white h-100">
+    <%= cl_image_tag booking.spaceship.photos[0].key, class: "card-img-top", style: "height: 200px; object-fit: cover; width: 100%;" %>
+    <div class="card-body d-flex flex-column" style="">
+      <h5 class="card-title spaceship-card-title" style="font-family: 'Orbitron', sans-serif; letter-spacing: 1px;"><%= booking.spaceship.name %></h5>
+      <p class="card-text spaceship-card-description flex-grow-1" style="font-family: 'Orbitron';" ><%= booking.spaceship.description %></p>
+      <p class="card-text spaceship-card-description flex-grow-1" style="font-family: 'Orbitron';" >Class: <%= booking.spaceship.ship_class %></p>
+      <p class="card-text spaceship-card-description flex-grow-1" style="font-family: 'Orbitron';" >Max Speed: <%= booking.spaceship.max_speed %></p>
+
+    </div>
+  </div>
+</div>

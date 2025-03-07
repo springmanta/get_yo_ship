@@ -57,6 +57,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_03_06_161042) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "booking_date"
+    t.integer "guests"
     t.index ["spaceship_id"], name: "index_bookings_on_spaceship_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
