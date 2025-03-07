@@ -23,7 +23,7 @@
       <ul class="navbar-nav d-flex align-items-center">
         <% if user_signed_in? %>
           <li class="nav-item me-3">
-            <a class="nav-link navbar-space-link" href="#">My Account</a>
+            <%= link_to "My Bookings", bookings_path, class: "nav-link navbar-space-link" %>
           </li>
           <li class="nav-item me-3">
             <a data-turbo-method="delete" class="nav-link navbar-space-link" rel="nofollow" data-method="delete" href="/users/sign_out">Log Out</a>

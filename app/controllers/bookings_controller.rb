@@ -1,5 +1,10 @@
 class BookingsController < ApplicationController
   before_action :set_spaceship, only: [:new, :create]
+  before_action :authenticate_user!
+
+  def index
+    @bookings = current_user.bookings.includes(:spaceship)
+  end
 
   def new
   end
