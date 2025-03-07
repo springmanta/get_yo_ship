@@ -4,8 +4,8 @@
   <img src="/assets/logo.png" alt="Logo" style="height: 30px; width: auto;">
 </a>
 
-  <!-- View Ships Link (only on show page) -->
-  <% if controller_name == "spaceships" && action_name == "show" %>
+  <!-- View Ships Link -->
+  <% unless controller_name == "spaceships" && action_name == "index" %>
     <a href="<%= spaceships_path %>" class="nav-link" style=" font-family:'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 2px; color: white; font-weight: bold; text-decoration: none; margin-right: 1rem;">VIEW SHIPS</a>
   <% end %>
 
