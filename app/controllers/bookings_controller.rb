@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   before_action :set_spaceship, only: [:new, :create]
+  before_action :authenticate_user!
 
   def new
   end
@@ -12,27 +13,9 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to booking_path(@booking), notice: "Get Yo Ship Confirmed!"
     else
-      render :new, status: :unprocessable_entity
+      render "spaceships/show", status: :unprocessable_entity
     end
   end
-
-  # chatGPT version:
-
-  # def create
-  #   raise
-  #   @booking = Booking.new(booking_params)
-  #   @booking.user = current_user
-
-
-  #   if @booking.guests > @spaceship.capacity
-  #     flash[:alert] = "You cannot exceed the ship's capacity of #{@spaceship.capacity} guests."
-  #     render "spaceships/show", status: :unprocessable_entity
-  #   elsif @booking.save
-  #     redirect_to booking_path(@booking), notice: "Booking successful!"
-  #   else
-  #     render "spaceships/show", status: :unprocessable_entity
-  #   end
-  # end
 
   def show
     @booking = Booking.find(params[:id])
