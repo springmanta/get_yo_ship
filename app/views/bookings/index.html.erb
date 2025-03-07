@@ -1,10 +1,18 @@
 <div class="container">
-
-<h1>My Bookings</h1>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-9 main-spaceship-container">
+      <div class="spaceship-name">
+        <h1>Your flights</h1>
+      </div>
 
   <% if @bookings.any? %>
-    <p>Show booking here</p>
+
+    <% @bookings.each do |booking| %>
+      <%= render "mybooking_shipcard", booking: booking  %>
+    <% end %>
   <% else %>
     <p>You have no bookings yet.</p>
   <% end %>
+</div>
+</div>
 </div>
