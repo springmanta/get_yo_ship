@@ -1,7 +1,7 @@
 
 <div class="spaceship-booking">
   <div class="booking-header">
-    <h3>Fill details to book</h3>
+    Book <%= @spaceship.name %>
   </div>
     <%= form_with(model: @booking, local: true) do |f| %>
     <div class="booking-form">
