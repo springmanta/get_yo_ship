@@ -8,7 +8,7 @@
         </div>
 
         <!-- Render Carousel Partial -->
-        <%= render 'carousel', spaceship: @spaceship %>
+        <%= render 'spaceships/carousel', spaceship: @spaceship %>
 
         <!-- About Ship Title -->
         <div class="about-ship-title"> About <%= @spaceship.name %> </div>
@@ -18,12 +18,12 @@
 
           <!-- Render Details Partial -->
           <div class="left-column-details">
-          <%= render 'details', spaceship: @spaceship %>
+          <%= render 'spaceships/details', spaceship: @spaceship %>
           </div>
 
           <!-- Render Booking Form Partial -->
           <div class="right-column-booking">
-          <%= render 'booking_form', spaceship: @spaceship, booking: @booking %>
+          <%= render 'spaceships/booking_form', spaceship: @spaceship, booking: @booking %>
           </div>
         </div>
     </div>
